@@ -258,3 +258,5 @@ RUN ln -s /usr/local/bin/xacro /root/interbotix_ws/src/xacro/
 RUN ln -s /root/interbotix_ws/deps/dynamixel-workbench/dynamixel_workbench_toolbox/DynamixelSDK/ros/devel/lib/libdynamixel_sdk.so /usr/lib
 
 RUN sed -i 's/wx250s/vx250/g' /root/interbotix_ws/src/interbotix_ros_arms/interbotix_examples/python_demos/bartender.py
+
+COPY server.sh /root/interbotix_ws/
